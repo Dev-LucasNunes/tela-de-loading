@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+    html, body{
+        height: 100%;
+        overflow: hidden;
+    }
+
+    body{
+        background-color: skyblue;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+    div{
+        width: 200px;
+        height: 100px;
+        background-image: url(nuvem-removebg-preview.png);
+        background-size: 100% 100%;
+        background-position: center;
+        z-index: 10;
+
+    }
+
+    div:nth-of-type(1){
+        align-self: flex-end;
+        margin-bottom: 140px;
+        animation-name: voar1;
+        animation-duration: 1.2s;
+        animation-iteration-count: infinite;
+        position: relative;
+        left: 1300px;
+    }
+    div:nth-of-type(2){
+        align-self: flex-start;
+        margin-top: 100px;
+        animation-name: voar2;
+        animation-duration: 0.8s;
+        animation-iteration-count: infinite;
+        position: relative;
+        left: 960px;
+    }
+    div:nth-of-type(3){
+        margin-bottom: -150px;
+        animation-name: voar3;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        position: relative;
+        left: 630px;
+
+    }
+    div:nth-of-type(4){
+        margin-top: -150px;
+        animation-name: voar4;
+        animation-duration: 1.4s;
+        animation-iteration-count: infinite;
+        position: relative;
+        left: 270px;
+
+    }
+
+    @keyframes voar1 {
+        0%   {position: relative;}
+        100% {position: relative; left:-600px;}
+    }
+    @keyframes voar2 {
+        0%   {position: relative;}
+        100% {position: relative; left:-1300px;}
+    }
+    @keyframes voar3 {
+        0%   {position: relative;}
+        100% {position: relative; left:-4500px;}
+    }
+    @keyframes voar4 {
+        0%   {position: relative;}
+        100% {position: relative; left:-1500px;}
+    }
+    .jetpack{
+        margin: 0 auto;
+        position: relative;
+        right: 380px;
+        bottom: 10px;
+        background-color: skyblue;
+        transform: rotate(40deg)
+    }
+    .jetpack img{
+        width: 170px;
+        height: 170px;
+
+    }
+
