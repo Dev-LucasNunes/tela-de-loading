@@ -14,7 +14,18 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
+        perspective: 1000px;
+        animation-name: tempo;
+        animation-iteration-count: infinite;
+        animation-duration: 30s;
+        transition: 5s;
+    }
 
+    @keyframes tempo{
+        0%{background-color: skyblue;}
+        50%{background-color: rgb(17, 95, 229);}
+        75%{ background-image: linear-gradient( rgb(238, 9, 9), rgb(213, 213, 5));}
+        100%{background-color: rgb(0,0,84);}
     }
     div{
         width: 150px;
@@ -84,13 +95,12 @@
         position: relative;
         right: 380px;
         bottom: -100px;
-        background-color: skyblue;
         transform: rotate(40deg);
         animation-name: movimento;
-        animation-duration: 10s;
+        animation-duration: 7s;
         animation-iteration-count: infinite;
-
-    }
+        transition: 1s;
+}
 
     @keyframes movimento {
         0%   {transform: rotate(40deg); position: relative; bottom: -30px;}
@@ -109,6 +119,6 @@
     .jetpack img{
         width: 150px;
         height: 150px;
-        background-color: skyblue;
+        background-color: transparent;
     }
 
